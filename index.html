@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script1.js"></script>
+</head>
+<body>
+    <div class="header">Rock, Paper, Scissors</div>
+
+    <div class="subtext">Make your choice:</div>
+
+    <div class="game">
+        <div class="choices">
+            <div><img src="images/rock.png" alt="rock"></div>
+            <div><input type="button" id="btnClick" value="Rock" onclick="playerScissors()"/></div>
+        </div>
+        <div class="choices">
+            <div><img src="images/paper.png" alt="paper"></div>
+            <div><input type="button" id="btnClick" value="Paper" onclick="playerScissors()"/></div>
+        </div>   
+        <div class="choices">
+            <div><img src="images/scissors.png" alt="scissors"></div>
+            <div><input type="button" id="btnClick" value="Scissors" onclick="playerScissors()"/></div>
+        </div>
+    </div>
+
+    <div class="pc">
+        <div>Computer choice: </div>
+        <div class="roundwin"></div>
+    </div>
+
+    <div class="result">
+        <div class="score">Score: </div>
+        <div class="winner"></div>
+        <div><input type="button" id="btnClick" value="Play Again!" onclick="playerScissors()"/></div>     
+
+    </div>
+
+    <div class="footer">l7</div>
+    
+</body>
+</html>
