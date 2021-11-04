@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissors</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script1.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="header">Rock, Paper, Scissors</div>
@@ -16,15 +16,15 @@
     <div class="game">
         <div class="choices">
             <div><img src="images/rock.png" alt="rock"></div>
-            <div><input type="button" id="btnClick" value="Rock" onclick="playerScissors()"/></div>
+            <button onclick="userScissors()">Rock</button>
         </div>
         <div class="choices">
             <div><img src="images/paper.png" alt="paper"></div>
-            <div><input type="button" id="btnClick" value="Paper" onclick="playerScissors()"/></div>
+            <button onclick="userScissors()">Paper</button>
         </div>   
         <div class="choices">
             <div><img src="images/scissors.png" alt="scissors"></div>
-            <div><input type="button" id="btnClick" value="Scissors" onclick="playerScissors()"/></div>
+            <button onclick="userScissors()">Scissors</button>
         </div>
     </div>
 
@@ -36,7 +36,7 @@
     <div class="result">
         <div class="score">Score: </div>
         <div class="winner"></div>
-        <div><input type="button" id="btnClick" value="Play Again!" onclick="playerScissors()"/></div>     
+        <button onclick="userScissors()">Play Again!</button>    
 
     </div>
 
