@@ -16,25 +16,26 @@
     <div class="game">
         <div class="choices">
             <div><img src="images/rock.png" alt="rock"></div>
-            <button onclick="userRock()">Rock</button>
+            <button id="btnOp" onclick="userRock()">Rock</button>
         </div>
         <div class="choices">
             <div><img src="images/paper.png" alt="paper"></div>
-            <button onclick="userPaper()">Paper</button>
+            <button id="btnOp" onclick="userPaper()">Paper</button>
         </div>   
         <div class="choices">
             <div><img src="images/scissors.png" alt="scissors"></div>
-            <button onclick="userScissors()">Scissors</button>
+            <button id="btnOp" onclick="userScissors()">Scissors</button>
         </div>
     </div>
 
     <div class="pc">
         <div>Computer choice: </div>
-        <div class="roundwin"></div>
+        <div id="pcchoice"></div>
     </div>
 
     <div class="result">
         <div class="score">Score:</div>
+        <div class="scorecontainer"></div>
         <div class="winner"></div>
         <button onclick="userScissors()">Play Again!</button>    
 

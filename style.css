@@ -75,3 +75,25 @@ button{
     align-items: center;
     font-weight: bolder;
 }
+
+#pcchoice{
+    height: 50px;
+    width: 400px;
+    border-color: whitesmoke;
+    border-style: solid;
+    color: whitesmoke;
+}
+.winner{
+    height: 50px;
+    width: 100px;
+    border-color: whitesmoke;
+    border-style: solid;
+    color: whitesmoke;
+}
+.scorecontainer{
+    height: 50px;
+    width: 100px;
+    border-color: whitesmoke;
+    border-style: solid;
+    color: whitesmoke;
+}
