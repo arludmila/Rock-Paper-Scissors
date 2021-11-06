@@ -6,36 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissors</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
-<body onload="scores()">
+<body>
     <header>Rock, Paper, Scissors</header>
 
     <div class="subtext">Make your choice:</div>
 
     <div class="game">
-        <div class="choices">
+        <div class="choices" id="Rock">
             <div><img src="images/rock.png" alt="rock"></div>
         </div>
-        <div class="choices">
+        <div class="choices" id="Paper">
             <div><img src="images/paper.png" alt="paper"></div>
         </div>   
-        <div class="choices">
+        <div class="choices" id="Scissors">
             <div><img src="images/scissors.png" alt="scissors"></div>
         </div>
     </div>
 
     <div class="result-round">
-        <span id="winner-text">Paper beats rock!</span>
+        <span id="winner-text"></span>
     </div>
 
     <div class="result-game">
-        <div class="user">User Score: <span id="user-score"></span></div>
-        <div class="pc">Computer Score: <span id="pc-score"></span></div>
+        <div class="user">User Score: <span id="user-score">0</span></div>
+        <div class="pc">Computer Score: <span id="pc-score">0</span></div>
     </div>
-    <div class="btn-again"><button onclick="userScissors()" id="again">Play Again!</button>    </div>
+    <div class="btn-again"><button id="again">Play Again!</button>    </div>
 
     <footer>l7</footer>
+
+    <script src="script.js"></script>
     
 </body>
 </html>

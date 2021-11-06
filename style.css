@@ -111,3 +111,20 @@ span{
     cursor: pointer;
     background-color: #D58936;
 }
+
+span{
+    padding: 20px 20px;
+}
+
+.win_glow{
+    border-color: 5px solid green;
+    box-shadow: 0 0 10px green;
+}
+.lose_glow{
+    border-color: 5px solid red;
+    box-shadow: 0 0 10px red;
+}
+.tie_glow{
+    border-color: 5px solid gray;
+    box-shadow: 0 0 10px gray;
+}
