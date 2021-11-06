@@ -19,7 +19,9 @@ function win(user,pc){
     pcscore_span.innerHTML = computerScore;
     winnertxt_span.innerHTML = `You won! ${user} beats ${pc}`;
     document.getElementById(user).classList.add("win_glow");
-    setTimeout(document.getElementById(user).classList.remove("win_glow"));
+    setTimeout(function() {
+        document.getElementById(user).classList.remove("win_glow")
+    },300);
 }
 function lose(user,pc){
     computerScore++;
@@ -27,21 +29,33 @@ function lose(user,pc){
     pcscore_span.innerHTML = computerScore;
     winnertxt_span.innerHTML = `You lost! ${user} beats ${pc}`;
     document.getElementById(user).classList.add("lose_glow");
-    setTimeout(document.getElementById(user).classList.remove("lose_glow"));
-}
+    setTimeout(function() {
+        document.getElementById(user).classList.remove("lose_glow")
+    },300);}
 function tie(user,pc){
     userscore_span.innerHTML = userScore;
     pcscore_span.innerHTML = computerScore;
     winnertxt_span.innerHTML = `You tied! ${user} equals ${pc}`;
     document.getElementById(user).classList.add("tie_glow");
-    setTimeout(document.getElementById(user).classList.remove("tie_glow"));
-}
-function playAgain(){
+    setTimeout(function() {
+        document.getElementById(user).classList.remove("tie_glow")
+    },300);}
+function playAgain(){ 
     userScore=0;
     computerScore=0;
     userscore_span.innerHTML = userScore;
     pcscore_span.innerHTML = computerScore;
     winnertxt_span.innerHTML = "";
+}
+function fiveRoundsAlert(){
+    if(userScore===5){
+        alert("You won 5 rounds! Congrats! 👏🎉👏");
+        playAgain();
+    }
+    else if(computerScore===5){
+        alert("You lost 5 rounds! 😓😓 Try again! 💪💪" );
+        playAgain();
+    }
 }
 function playRound(user){
     let pc = getComputerChoice();
@@ -50,16 +64,19 @@ function playRound(user){
         case "PaperRock":
         case "ScissorsPaper":
             win(user,pc);
+            fiveRoundsAlert()
             break;
         case "RockPaper":
         case "ScissorsRock":
         case "PaperScissors":
             lose(user,pc);
+            fiveRoundsAlert()
             break;
         case "RockRock":
         case "PaperPaper":
         case "ScissorsScissors":
             tie(user,pc);
+            fiveRoundsAlert()
             break;
     }
 }

@@ -109,7 +109,7 @@ span{
 }
 .choices:hover{
     cursor: pointer;
-    background-color: #D58936;
+    background-color: #ccb398;
 }
 
 span{
@@ -117,14 +117,14 @@ span{
 }
 
 .win_glow{
-    border-color: 5px solid green;
-    box-shadow: 0 0 10px green;
+    border: 5px solid rgb(10, 247, 10);
+    box-shadow: 0 0 10px rgb(146, 250, 146);
 }
 .lose_glow{
-    border-color: 5px solid red;
-    box-shadow: 0 0 10px red;
+    border: 5px solid rgb(241, 51, 51);
+    box-shadow: 0 0 10px rgb(248, 99, 99);
 }
 .tie_glow{
-    border-color: 5px solid gray;
-    box-shadow: 0 0 10px gray;
-}
+    border: 5px solid rgba(0, 59, 253, 0.89);
+    box-shadow: 0 0 10px rgb(91, 132, 247);
+} 
