@@ -1,27 +1,34 @@
-body{
-    height: 100vh;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap');
+*{
     margin: 0;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Asap', sans-serif;
+    
 }
-.header{
+body{
+    background-color: #2b303a;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+header{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
-    padding: 5px;
-    color: whitesmoke;
+    height: 70px;
+    padding: 20px;
+    color: #fffbff;
     font-size: 38px;
     font-weight: bolder;
+    background-color: #A44200;
 }
 .subtext{
-    color: whitesmoke;
+    color: #fffbff;
     display: flex;
     font-size: 30px;
-    padding: 35px;
+    padding: 15px;
     align-items: center;
     justify-content: center;
 }
@@ -30,44 +37,46 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 40px;
+    padding: 20px;
 }
 .choices{
     text-align: center;
+    border-color: #fffbff;
+    border-style: solid;
+    border-radius: 200px;
+    padding: 10px;
     
 }
 img{
-    height: 250px;
+    height: 225px;
     width: auto;
-}
-button{
-    background-color: black;
-    border: rgba(255, 255, 255, 0.527);
-    border-style:ridge;
-    border-radius: 5px;
-    color: whitesmoke;
-    padding: 10px;
-    font-size: 18px;
 
 }
-.pc{
+.result-round{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #fffbff;
+    font-size: 27px;
+}
+.pc,.user{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    color: whitesmoke;
+    color: #fffbff;
     padding: 10px;
     font-size: 25px;
 }
-.result{
+.result-game{
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 50px;
-    padding: 20px;
-    color: whitesmoke;
-    font-size: 27px;
+    padding: 60px 30px;
+    
 }
-.footer{
+footer{
     display: flex;
     color: orange;
     padding: 20px;
@@ -76,24 +85,29 @@ button{
     font-weight: bolder;
 }
 
-#pcchoice{
-    height: 50px;
-    width: 400px;
-    border-color: whitesmoke;
-    border-style: solid;
-    color: whitesmoke;
+
+span{
+    font-size: 27px;
+    color: #fffbff;
 }
-.winner{
-    height: 50px;
-    width: 100px;
-    border-color: whitesmoke;
-    border-style: solid;
-    color: whitesmoke;
+.btn-again{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.scorecontainer{
-    height: 50px;
-    width: 100px;
-    border-color: whitesmoke;
-    border-style: solid;
-    color: whitesmoke;
+#again{
+    padding: 5px 20px;
+    font-size: 18px;
+    color: #fffbff;
+    background-color: #1282a2;
+    border-style: none;
+    border-radius: 100px;
+}
+#again:hover{
+    cursor: pointer;
+    background-color: #12a24294;
+}
+.choices:hover{
+    cursor: pointer;
+    background-color: #D58936;
 }

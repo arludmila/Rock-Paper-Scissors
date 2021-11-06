@@ -8,40 +8,34 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body>
-    <div class="header">Rock, Paper, Scissors</div>
+<body onload="scores()">
+    <header>Rock, Paper, Scissors</header>
 
     <div class="subtext">Make your choice:</div>
 
     <div class="game">
         <div class="choices">
             <div><img src="images/rock.png" alt="rock"></div>
-            <button id="btnOp" onclick="userRock()">Rock</button>
         </div>
         <div class="choices">
             <div><img src="images/paper.png" alt="paper"></div>
-            <button id="btnOp" onclick="userPaper()">Paper</button>
         </div>   
         <div class="choices">
             <div><img src="images/scissors.png" alt="scissors"></div>
-            <button id="btnOp" onclick="userScissors()">Scissors</button>
         </div>
     </div>
 
-    <div class="pc">
-        <div>Computer choice: </div>
-        <div id="pcchoice"></div>
+    <div class="result-round">
+        <span id="winner-text">Paper beats rock!</span>
     </div>
 
-    <div class="result">
-        <div class="score">Score:</div>
-        <div class="scorecontainer"></div>
-        <div class="winner"></div>
-        <button onclick="userScissors()">Play Again!</button>    
-
+    <div class="result-game">
+        <div class="user">User Score: <span id="user-score"></span></div>
+        <div class="pc">Computer Score: <span id="pc-score"></span></div>
     </div>
+    <div class="btn-again"><button onclick="userScissors()" id="again">Play Again!</button>    </div>
 
-    <div class="footer">l7</div>
+    <footer>l7</footer>
     
 </body>
 </html>

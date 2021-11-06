@@ -1,9 +1,9 @@
-const options=["rock","paper","scissors"];
-var user="";
-var pc="";
+var userScore = 0
+var computerScore = 0
 
-function userPlay(){
-    return user
+function scores(){
+    document.getElementById("pcscorecontainer").innerHTML=computerScore;
+    document.getElementById("userscorecontainer").innerHTML=userScore;
 }
 
 function userRock(){
@@ -22,35 +22,21 @@ function userScissors(){
     userPlay();
 }
 
+function userPlay(){
+    return user
+    playRound()
+}
+
 function computerPlay(){
     return options[Math.floor(Math.random()*options.length)];
 }
 
 
 function playRound(){
-    playerSelection=userPlay()
-    computerSelection=computerPlay()
-    console.log("Computer choice: "+computerSelection)
-    if  (playerSelection === "rock" && computerSelection === "paper"){
-         console.log("You lose!");
-    }
-    else if (playerSelection === "paper" && computerSelection === "rock"){
-         console.log("You win!");
-    }
-    else if (playerSelection === "rock" && computerSelection === "scissors"){
-         console.log("You win!");
-    }
-    else if (playerSelection === "scissors" && computerSelection === "rock"){
-         console.log("You lose!");
-    }
-    else if (playerSelection === "scissors" && computerSelection === "paper"){
-         console.log("You win!");
-    }
-    else if (playerSelection === "paper" && computerSelection === "scissors"){
-         console.log("You lose!");
-    }
-    else if(playerSelection===computerSelection){
-         console.log("You tied!")
+    let computerSelection="paper"
+    let playerSelection="scissors"
+    if((playerSelection === "paper" && computerSelection === "rock")||(playerSelection === "rock" && computerSelection === "scissors")||(playerSelection === "scissors" && computerSelection === "paper")){
+        let roundresult="You Win!"
+        document.getElementById("roundwinner").innerHTML=roundresult
     }
 }
-
